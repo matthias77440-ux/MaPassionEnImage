@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: "Arvo", serif;
+  background-color: #121212;
+  color: white;
+}
+
+a{
+    color: #ffffff;
+}
+
+#premier a{
+    text-decoration: underline;
+}
+.locked{
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    position: relative;
+    top: 15px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: -5%;
+}
+
+nav a{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: #a7a7a7
+}
+
+.space{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.bton{
+    position: absolute;
+    top: 85vh;
+    left: 43%;
+    color: rgb(255, 255, 255);
+    z-index: 0;
+    border: solid;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+}
+
+.bton:hover{
+    background-color: #a7a7a7;
+    transition: 0.2s;
+}
+
+.fleche-blanche{
+    width: 20px;
+    height: 20px;
+    background-image: url("svg/arrow-down-svgrepo-com.svg");
+}
+
+.fleche-noire{
+    width: 20px;
+    height: 20px;
+    background-image: url("svg/arrowNoire.svg");
+}
+
+.remonte{
+    position: fixed;
+    top: 85vh;
+    right: 5%;
+    color: rgb(255, 255, 255);
+    z-index: 999;
+    border: solid;
+    padding: 20px;
+    border-radius: 999px;
+}
+
+.remonte:hover{
+    background-color: #a7a7a7;
+    transition: 0.2s;
+}
+.fleche-w{
+    width: 20px;
+    height: 20px;
+    background-image: url("svg/FlecheBlanchesvg.svg")
+}
+
+.fleche-b{
+    width: 20px;
+    height: 20px;
+    background-image: url("svg/arrow-up-svgrepo-com.svg")
+}
+.cache{
+    visibility: hidden;
+}
+
+.montre{
+    visibility: visible;
+}
+
+#deuxieme, #troisieme{
+    width: 100%;
+    height: 100vh;
+}
+
+#mes-images section>h1{
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+#mes-images>h1, #premier>h1, #formulaire>h1{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    font-size: 4rem;
+    text-align: center;
+    border: solid;
+    border-radius: 20px;
+}
+
+
+/* à modifier */
+.categorie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.systeme-solaire, .exoplanete, .petit-trou, .grand-trou{
+    width: 450px;
+    height: 500px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.systeme-solaire, .petit-trou{
+    margin-left: 200px;
+
+    background-image: repeating-linear-gradient(225deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 20px, transparent 40px),linear-gradient(90deg, rgb(192,192,192),rgb(0,0,0));
+}
+
+.systeme-solaire:hover, .petit-trou:hover{
+    background-image: repeating-linear-gradient(225deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 20px, transparent 40px),linear-gradient(90deg, rgb(102, 102, 102),rgb(0,0,0));
+} 
+
+.exoplanete, .grand-trou{
+    margin-right: 200px;
+
+    background-image: repeating-linear-gradient(-225deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 20px, transparent 40px),linear-gradient(-90deg, rgb(192,192,192),rgb(0,0,0));
+}
+
+.exoplanete:hover, .grand-trou:hover{
+    background-image: repeating-linear-gradient(-225deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 20px, transparent 40px),linear-gradient(-90deg, rgb(102, 102, 102),rgb(0,0,0));
+    
+}
+
+#SysSol, #ExPl, #TrouStel, #Massif{
+    display: block;
+    position: absolute;
+    z-index: 900;
+    background-color: #121212;
+    width: 100%;
+    height: auto;
+    min-height: 200vh;
+}
+
+.image{
+    margin-bottom: 50px;
+    /* background-color: aquamarine; */
+}
+#SysSol p, #ExPl p, #TrouStel p, #Massif p{
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+#SysSol h2, #ExPl h2, #TrouStel h2, #Massif h2{
+    background-color: #121212;
+    border-bottom-right-radius: 20px;
+    border-bottom: solid #ffffff 3px;
+    border-right: solid #ffffff 3px;
+    position: absolute;
+    left: 50px;
+    padding: 10px;
+}
+
+/* ici */
+
+
+.image:not(h2){
+    display: flex;
+}
+
+.grossi:hover{
+    scale: 1.1;
+}
+
+.mercure{
+    width: 600px;
+    height: 350px;
+    background-color: black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.venus{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.terre{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.mars{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.jupiter{
+    width: 600px;
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color:black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.saturne{
+    width: 600px;
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.uranus{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.neptune{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: black;
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.retour{
+    background-image: url("svg/arrow-u-up-left-svgrepo-com (1).svg");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    z-index: 999;
+    border: solid;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    margin-left: 25px;
+}
+
+.retour:hover{
+    background-color:#a7a7a7;
+    cursor: pointer;
+}
+
+#titre{
+    border: solid;
+    border-radius: 20px;
+    height: 35px;
+    width: 250px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+}
+
+#url{
+    border: solid;
+    border-radius: 20px;
+    height: 35px;
+    width: 500px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+}
+
+#description{
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#envoie{
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.proxima{
+    width: 600px;
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.kepler{
+    width: 600px;
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.trappist{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.pegasi{
+    width: 600px;
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    width: 100%;
+    scale: 0.8;
+    margin: auto;
+}
+
+.popup p{
+    position: fixed;
+    scale: 5;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 999px;
+    color: black;
+    font-weight: 900;
+}
+
+.popup p:hover{
+    background-color: #a7a7a7;
+}
+
+.image-cliquable{
+    cursor: pointer;
+}
+
+.touche{
+    height: 200px;
+    width: 100%;
+    background-color: aqua;
+    overflow-y: hidden;
+}
+
+.cygnus{
+    width: 600px;
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.stargro{
+    width: 600px;
+    height: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.saga{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.ton{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+#premier p{
+    padding: 70px;
+    margin: 50px;
+    font-size: 1.2rem
+}
+
+#premier{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+figcaption{
+    margin-left: 50px;
+    padding: 20px;
+    opacity: 30%;
+}
+
+.image a{
+    text-decoration: underline;
+}
+
+.fond{
+    position: fixed;
+    top: 0px;
+    width: 150%;
+    height: 100vh;
+    z-index: -100;
+    overflow-x: hidden;
+}
+
+.appercu{
+    display: flex;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.rempl{
+    display: block;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.rempl img{
+    width: 350px;
+    height: 350px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: rgb(0, 0, 0);
+    border: solid 3px #ffffff;
+    border-radius: 50px;
+    margin-right: 50px;
+}
+
+form{
+    width: 700px;
+    position: relative;
+    margin-left: 50px;
+    scale: 1;
+    margin-bottom: 100px;
+}
+
+.rempl h2{
+    background-color: #121212;
+    border-bottom-right-radius: 20px;
+    border-bottom: solid #ffffff 3px;
+    border-right: solid #ffffff 3px;
+    position: absolute;
+    padding: 10px;
+}
+
+#afficheDescription{
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+.rempl>div{
+    display: flex;
+    justify-content: center;
+}
+
+.rempl h3{
+    width: 500px;
+    margin-left: 50px;
+}
+
+
+.size-change{
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border-radius: 999px;
+    top: 400px;
+    left: 30px;
+}
+
+.height{
+    background-image: url("svg/double-arrow-svgrepo-com.svg");
+    background-position: center;
+}
+
+.width{
+    background-image: url("svg/double-arrow-svgrepo-com (1).svg");
+    background-position: center;
+}
+
+.size-change:hover{
+    background-color: #a7a7a7;
+}
+
+.diminue{
+    display: flex;
+    position: relative;
+    top: 130vh;
+    background-color: black;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.augmente{
+    display: flex;
+    position: relative;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    top: 70vh;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#titre-appercu{
+    font-size: 2rem;
+    margin-left: 50px;
+    border: none;
+}

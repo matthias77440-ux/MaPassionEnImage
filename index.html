@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passion en images</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body id="top" class="ver locked">
+    <section class="landing">
+        <div class="container">
+            <header>
+                <div class="logo">Passion <br> en Images</div>
+                <nav>
+                    <a href="#premier" class="icone" alt="Première Catégorie - Ma Passion">Ma Passion</a>
+                    <a href="#mes-images" class="icone" alt="Deuxieme Catégorie - Mes Images">Mes Images</a>
+                    <a href="#formulaire" class="icone" alt="Troisième Catégorie - Crée ton image">Crée ton image</a>
+                </nav>
+            </header>
+
+
+            <spline-viewer class="space"
+                url="https://prod.spline.design/JCQzaKk6TbCYrvrf/scene.splinecode"></spline-viewer>
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.28/build/spline-viewer.js"></script>
+
+            <a href="#premier" class="bton" alt="Première Catégorie - Ma Passion">
+                <div class="fleche fleche-blanche"></div>
+            </a>
+        </div>
+    </section>
+    
+    <div class="fond">
+        <spline-viewer url="https://prod.spline.design/bDN7vUiTbkUQgMpf/scene.splinecode"></spline-viewer>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js"></script>
+    </div>
+    
+    <div class="voir cache">
+        <a href="#top" class="remonte" alt="Acceuil">
+            <div class="fleche fleche-w"></div>
+        </a>
+    </div>
+    
+    <section id="premier">
+        <h1>Ma Passion</h1>
+        <br>
+        <p>Depuis toujours, <strong>l’espace</strong> me passionne.<br>
+            <br>
+            L’immensité de l’univers, le mystère des étoiles, des planètes et des galaxies nourrissent ma curiosité et mon imagination. Observer le ciel, penser aux missions spatiales ou aux découvertes scientifiques me facine. L’espace représente à la fois l’inconnu, le rêve et le progrès. <br>
+            <br>
+            Cette passion me pousse à vouloir comprendre de plus en plus de choses et à pouvoir répondre à des questions qui, jusque-là, étaient remplies de mystère.<br>
+            <br>
+            Ici, j’ai voulu représenter cette passion en image avec les éléments qui constituent l’Univers, les plus importants pour moi, avec d’une part les <a href="#deuxieme" alt="Deuxieme Catégorie - Mes Images">planètes</a>, et d'autre part les <a href="#troisieme"les trous noirs alt="Troisième Catégorie - Crée ton image">trous noirs</a>
+</p>
+    </section>
+    
+    <section id="mes-images">
+        <h1>Mes Images</h1>
+        <section id="deuxieme">
+            <br>
+            <div class="retour hide"></div>
+            <br>
+            <h1>Les Planètes</h1>
+            <br>
+            <div class="popup" id="popup"><img id="popup-img" src="" alt=""><p>x</p>
+            </div>
+            <section id="SysSol" class="look hide">
+                <div class="image">
+                    <h2>Mercure</h2>
+                    <div id="image1">
+                        <div class="image-cliquable">
+                            <img src="Images/mercury-6618698_1280.jpg" alt="" class="mercure grossi">
+                        </div>
+                        <figcaption>source : <a href="https://pixabay.com/fr/" alt="Lien externe - Pixabay">pixabay.com</a></figcaption>
+                    </div>
+                    <p><strong>Mercure</strong> est la planète la plus proche du Soleil. <br>
+                        <br>
+                        Bouillante le jour (jusqu'à +430°C),
+                        glacée la nuit (jusqu'à -180°C)<br>
+                        <br>
+                        <br>
+                        <strong>Une journée y dure plus longtemps qu’une année !</strong>
+                        <br>
+                        <br>
+                        -> Elle met 59 jours terrestres pour tourner sur elle-même, mais seulement 88 jours<br> pour faire
+                        le tour du Soleil.
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>Vénus</h2>
+                    <div class="image2">
+                        <div class="image-cliquable"><img src="Images/1080px-PIA23791-Venus-RealAndEnhancedContrastViews-20200608_(cropped).jpg" alt="" class="venus grossi">
+                        </div>
+                        <figcaption>source : <a href="https://science.nasa.gov/photojournal/" alt="Lien externe - NASA">NASA</a></figcaption>
+                    </div>
+                    <p><strong>Vénus</strong> est la deuxième planète la plus proche du Soleil.<br>
+                        <br>
+                        Sa température moyenne à la surface est de +460°C (planète la plus chaude).<br>
+                        <br>
+                        <br>
+                        <strong>Elle tourne à l’envers !</strong><br>
+                        <br>
+                        -> Vénus a une rotation rétrograde : le Soleil s’y lève à l’ouest <br>
+                        et se couche à l’est.
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>La Terre</h2>
+                    <div class="image3">
+                        <div class="image-cliquable"><img src="Images/960px-Earth_Western_Hemisphere.jpg" alt="" class="terre grossi">
+                        </div>
+                        <figcaption>source : <a href="https://science.nasa.gov/earth/earth-observatory/" alt="Lien externe - NASA">NASA</a></figcaption>
+                    </div>
+                    <p><strong>La Terre</strong> est la troisième planète la plus proche du Soleil.<br>
+                        <br>
+                        Sa température moyenne à la surface est de +15°C.<br>
+                        <br>
+                        <br>
+                        <strong>Elle n’est pas parfaitement ronde !</strong><br>
+                        <br>
+                        -> La Terre est légèrement aplatie aux pôles à cause de sa rotation : c’est un géoïde.
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>Mars</h2>
+                    <div class="image4">
+                        <div class="image-cliquable"><img src="Images/960px-OSIRIS_Mars_true_color.jpg" alt="" class="mars grossi">
+                        </div>
+                        <figcaption>source : <a href="https://commons.wikimedia.org/wiki/Mars#/media/File:OSIRIS_Mars_true_color.jpg" alt="Lien externe - Wikimedia">ESA & MPS for OSIRIS Team</a></figcaption>
+                    </div>
+                    <p><strong>Mars</strong> est la quatrième planète la plus proche du Soleil. <br>
+                        <br>
+                        Sa température moyenne à la surface est de -63°C. <br>
+                        <br>
+                        <br>
+                        <strong>Elle possède le plus grand volcan du Système solaire !</strong><br>
+                        <br>
+                        -> Olympus Mons est presque 3 fois plus haut que l’Everest.
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>Jupiter</h2>
+                    <div class="image5">
+                        <div class="image-cliquable"><img src="Images/jupiter-5263284_1280.jpg" alt="" class="jupiter grossi">
+                        </div>
+                        <figcaption>source : <a href="https://pixabay.com/fr/" alt="Lien externe - Pixabay">pixabay.com</a></figcaption>
+                    </div>
+                    <p><strong>Jupiter</strong> est la cinquième planète la plus proche du Soleil. <br>
+                        <br>
+                        Sa température moyenne à la surface est de -145°C. <br>
+                        <br>
+                        <br>
+                        <strong>Elle pourrait contenir toutes les autres planètes !</strong><br>
+                        <br>
+                        -> Son volume est si immense (1,431 28 × 1015 km3 soit 1 321,3 Terres) qu’on pourrait y <br>
+                        loger toutes les planètes du Système solaire… avec de la place en plus.
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>Saturne</h2>
+                    <div class="image6">
+                        <div class="image-cliquable"><img src="Images/astronomy-6924051_1280.jpg" alt="" class="saturne grossi">
+                        </div>
+                        <figcaption>source : <a href="https://pixabay.com/fr/" alt="Lien externe - Pixabay">pixabay.com</a></figcaption>
+                    </div>
+                    <p><strong>Saturne</strong> est la sixième planète la plus proche du Soleil. <br>
+                        <br>
+                        Sa température moyenne à la surface est de -178°C. <br>
+                        <br>
+                        <br>
+                        <strong>Elle flotterait sur l’eau (en théorie) !</strong><br>
+                        <br>
+                        -> Sa densité moyenne est plus faible que celle de l’eau.
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>Uranus</h2>
+                    <div class="image7">
+                        <div class="image-cliquable"><img src="Images/uranus-11625_1280.jpg" alt="" class="uranus grossi">
+                        </div>
+                        <figcaption>source : <a href="https://pixabay.com/fr/" alt="Lien externe - Pixabay">pixabay.com</a></figcaption>
+                    </div>
+                    <p><strong>Uranus</strong> est la septième planète la plus proche du Soleil. <br>
+                        <br>
+                        Sa température moyenne à la surface est de -224°C (planète la plus froide). <br>
+                        <br>
+                        <br>
+                        <strong>Elle roule autour du Soleil !</strong><br>
+                        <br>
+                        -> Son axe est incliné à ~98°, ce qui la fait tourner presque couchée sur le côté.
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>Neptune</h2>
+                    <div class="image8">
+                        <div class="image-cliquable"><img src="Images/neptune-67537_1280.jpg" alt="" class="neptune grossi">
+                        </div>
+                        <figcaption>source : <a href="https://pixabay.com/fr/" alt="Lien externe - Pixabay">pixabay.com</a></figcaption>
+                    </div>
+                    <p><strong>Neptune</strong> est la huitième planète la plus proche du Soleil. <br>
+                        <br>
+                        Sa température moyenne à la surface est de -214°C. <br>
+                        <br>
+                        <br>
+                        <strong>Elle a les vents les plus rapides connus !</strong><br>
+                        <br>
+                        -> Les vents y dépassent 2 000 km/h, plus rapides que la vitesse du son sur Terre.
+                    </p>
+                </div>
+            </section>
+            <section id="ExPl" class="look hide">
+
+                <div class="image">
+                    <h2>Proxima Centuri b</h2>
+                    <div class="image1-2">
+                        <div class="image-cliquable"><img src="Images/ann16056a.jpg" alt="" class="proxima grossi">
+                        </div>
+                        <figcaption>source : <a href="https://www.eso.org/public/images/ann16056a/" alt="Lien externe - ESO">ESO</a>
+                    </div>
+
+                    <p><strong>Promima Centuri b</strong> est une planète situé à environ 4,24 années-lumière de la Terre.<br><br>Elle est plus massif que la Terre et orbite dans la zone habitable de son Étoile Proxima Centuri.<br><br><br><strong>La voisine la plus proche de notre Soleil !</strong><br><br>-> Même si Proxima Centauri b est proche en termes astronomiques, un voyage avec la technologie actuelle prendrait des dizaines de milliers d’années pour l’atteindre.</p>
+                </div>
+                <div class="image">
+                    <h2>Kepler-186f</h2>
+                    <div class="image2-2">
+                        <div class="image-cliquable"><img src="Images/1280px-Kepler186f-ArtistConcept-20140417.jpg" alt="" class="kepler grossi">
+                        </div>
+                        <figcaption>source : <a href="https://commons.wikimedia.org/wiki/Category:Kepler-186_f?uselang=fr#/media/File:Kepler186f-ArtistConcept-20140417.jpg" alt="Lien externe - NASA">NASA</a></figcaption>
+                    </div>
+
+                    <p><strong>Kepler 186 f</strong> est une planète situé à environ 582 années-lumière de la Terre.<br><br>Elle fait presque la même taille que la Terre (1,1x le rayon de la Terre) et orbite dans la zone habitable de son Étoile Kepler 186 f.<br><br><br><strong>Elle a marqué un tournant dans le monde de la recherche spatiale !</strong><br><br>-> Kepler-186f a été la première exoplanète de taille comparable à la Terre découverte dans la zone habitable d’une autre étoile, ce qui a ouvert de grandes perspectives pour la recherche de vie extraterrestre
+                    </p>
+                </div>
+                <div class="image">
+                    <h2>TRAPPIST-1e</h2>
+                    <div class="image3-2">
+                        <div class="image-cliquable"><img src="Images/TRAPPIST-1e_artist_impression_2018.jpg" alt="" class="trappist grossi">
+                        </div>
+                        <figcaption>source : <a href="https://science.nasa.gov/photojournal/trappist-1-planet-lineup-updated-feb-2018/" alt="Lien externe - NASA">NASA</a></figcaption>
+                    </div>
+
+                    <p><strong>TRAPPIST-1e</strong> est une planète situé à environ 39 années-lumière de la Terre.<br><br>Elle fait presque la même taille que la Terre (0,92x le rayon de la Terre) et orbite dans la zone habitable de son Étoile TRAPPIST-1.<br><br><br><strong>Une planète au cœur d’un système extraordinaire !</strong><br><br>-> TRAPPIST-1e fait partie d’un système de sept planètes telluriques, toutes très proches les unes des autres, si bien qu’un lever de soleil sur TRAPPIST-1e pourrait être visible depuis plusieurs planètes voisines !</p>
+                </div>
+                <div class="image">
+                    <h2>51 Pegasi b</h2>
+                    <div class="image4-2">
+                        <div class="image-cliquable"><img src="Images/960px-Artist_impression_of_the_exoplanet_51_Pegasi_b.jpg" alt="" class="pegasi grossi">
+                        </div>
+                        <figcaption>source : <a href="https://www.eso.org/public/russia/images/eso1517a/" alt="Lien externe - ESO">ESO</a></figcaption>
+                        
+                    </div>
+
+                    <p><strong>51 Pegasi b</strong> est une planète situé à environ 50,9 années-lumière de la Terre.<br><br>Elle est beaucoup plus massif que la Terre (0,92x le rayon de la Terre) et orbite dans la zone habitable de son Étoile 51 Pegasi b.<br><br><br><strong>La pionnière des exoplanètes !</strong><br><br>-> 51 Pegasi b a été la première exoplanète découverte autour d’une étoile de type solaire en 1995, marquant le début de l’ère moderne de la recherche d’exoplanètes.</p>
+                </div>
+            </section>
+            <div class="categorie">
+                <a href="#deuxieme" alt="Deuxième Catégorie - Mes Images">
+                    <div class="systeme-solaire">
+                        <h2>Système Solaire</h2>
+                    </div>
+                </a>
+                <a href="#deuxieme" alt="Deuxième Catégorie - Mes Images">
+                    <div class="exoplanete">
+                        <h2>Exoplanètes</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="troisieme">
+            <br>
+            <div class="retour hide"></div>
+            <br>
+            <h1>Les Trous Noirs</h1>
+            <br>
+            <section id="TrouStel" class="look hide">
+                <div class="image">
+                    <h2>Cygnus X-1</h2>
+                    <div class="image1-3">
+                        <div class="image-cliquable"><img src="Images/1016px-Black_hole_Cygnus_X-1.jpg" alt="" class="cygnus grossi">
+                        </div>
+                        <figcaption>source : <a href="https://www.nasa.gov/" alt="Lien externe - NASA">NASA</a></figcaption>
+                    </div>
+                    <p><strong>Cygnus X-1</strong> est un trou noir stellaire situé à environ 6 070 années-lumière de la Terre.<br><br>Le rayon de son horizon des évènement est d'environ de 62km et sa masse est d'environ 21x celle du Soleil.<br><br><br><strong>Un des trous noirs les plus célèbres ! </strong><br><br>-> Cygnus X-1 a été le premier trou noir candidat confirmé grâce à ses émissions de rayons X et à ses effets gravitationnels sur son étoile compagnon, devenant un objet clé pour comprendre les trous noirs stellaires.<p>
+                </div>
+                <div class="image">
+                    <h2>Star GRO J1655-40</h2>
+                    <div class="image2-3">
+                        <div class="image-cliquable"><img src="Images/lossy-page1-1458px-GRO_J1655-40-_NASA's_Chandra_Answers_Black_Hole_Paradox_(2006-j1655_-_j1655_ill_disk).tiff.jpg" alt="" class="stargro grossi">
+                        </div>
+                        <figcaption>source : <a href="https://chandra.cfa.harvard.edu/photo/2006/j1655/" alt="Lien externe - NASA">NASA</a></figcaption>
+                    </div>
+
+                    <p><strong>Star GRO J1655-40</strong> est un trou noir stellaire situé à environ 11 000 années-lumière de la Terre.<br><br>Le rayon de son horizon des évènement est d'environ de 19km et sa masse est d'environ 6,3x celle du Soleil.<br><br><br><strong>Un trou noir qui fait parler de lui !</strong><br><br>-> GRO J1655-40 est célèbre pour avoir été le premier trou noir observé en train de lancer des jets de matière à grande vitesse, ce qui a permis aux astronomes d’étudier les phénomènes extrêmes liés aux trous noirs stellaires.<p>
+                </div>
+        
+            </section>
+            <section id="Massif" class="look hide">
+                <div class="image">
+                    <h2>Sagittarius A*</h2>
+                    <div class="image1-4">
+                        <div class="image-cliquable"><img   src="Images/1080px-Primera_imagen_de_Sgr_A__tomada_por_el_Event_Horizon_Telescope_Collaboration.jpg" alt="" class="saga grossi">
+                        </div>
+                        <figcaption>source : <a href="https://www.eso.org/public/images/eso2208-eht-mwa/" alt="Lien externe - EHT">EHT Collaboration</a></figcaption>
+                    </div>
+
+                    <p><strong>Sagittarius A*</strong> est un trou noir supermassif situé au centre de notre galaxie, la Voie Lactée, à environ 26 700 années-lumière de la Terre.<br><br>Le rayon de son horizon des évènement est d'environ de 17,7 millions de km et sa masse est d'environ 4 millions de fois celle du Soleil.<br><br><br><strong>Le géant caché au cœur de la Voie Lactée !</strong><br><br>-> Malgré sa masse énorme, Sagittarius A* est relativement « petit » comparé à sa force gravitationnelle, et les astronomes peuvent observer les mouvements des étoiles autour de lui pour mieux comprendre la nature des trous noirs supermassifs.<p>
+                </div>
+                <div class="image">
+                    <h2>Ton 618</h2>
+                    <div class="image4-2">
+                        <div class="image-cliquable"><img src="Images/960px-Ton618.jpg" alt="" class="ton grossi">
+                        </div>
+                        <figcaption>source : <a href="https://commons.wikimedia.org/wiki/File:Ton618.png#/media/File:Ton618.png" alt="Lien externe - PAblo Carlos Budassi">Pablo Carlos Budassi</a></figcaption>
+                    </div>
+                    <p><strong>Ton 618</strong> est un trou noir supermassif situé à environ 10,4 milliards d'années-lumière de la Terre.<br><br>Le rayon de son horizon des évènement est d'environ de 190 milliards de km (soit 43x plus grand que notre système solaire) et sa masse est d'environ 66 milliards de fois celle du Soleil.<br><br><br><strong>Le colosse du cosmos !</strong><br><br>-> TON 618 est aussi un quasar ultra-lumineux, brillant des centaines de milliers de milliards de fois plus fort que le Soleil, car il attire de grandes quantités de matière qui chauffent et émettent une lumière intense en tombant vers le trou noir.<p>
+                </div>
+            </section>
+            <div class="categorie">
+                <a href="#troisieme" alt="Troisième Catégorie - Crée ton image">
+                    <div class="petit-trou">
+                        <h2>Trous Noirs Stellaires</h2>
+                    </div>
+                </a>
+                <a href="#troisieme" alt="Troisième Catégorie - Crée ton image">
+                    <div class="grand-trou">
+                        <h2>Trous Noirs Supermassifs</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </section>
+
+
+
+
+    <section id="formulaire">
+        <h1>Crée ton image</h1>
+        <br>
+        <br id="top-form">
+        <br>
+        <br>
+        <div class="rempl">
+            <div>
+                <form>
+                    <label for="titre">Titre* :</label>
+                    <br>
+                    <input type="text" id="titre" required>
+                    <br>
+                    <br>
+                    <label for="url">URL* :</label>
+                    <br>
+                    <input type="url" id="url" required>
+                    <br>
+                    <br>
+                    <label for="description">Description :</label>
+                    <br>
+                    <textarea rows="10" cols="50" id="description"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" id="envoie">
+                </form>
+                <h3 class="txt">Representez votre passion !<br><br>ajoutez un titre, l'url de votre image ainsi q'une description</h3>
+            </div>
+            <h2 id="titre-appercu">Aperçu</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="appercu">
+                <div class="rang">
+                    <h2 id="afficheTitre"></h2>
+                    <img id="afficheImage" alt=""></img>
+                </div>
+
+                <p id="afficheDescription"></p>
+            </div>
+            
+            <div id="double" class="size-change height"> 
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="diminue"><p>mentions légales</p></footer>
+</body>
+
+</html>
